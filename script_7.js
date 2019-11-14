@@ -17,22 +17,28 @@ function isUpperCase(input) {
 
 if (input.includes(question)) {   // Si contient un ? =>
     console.log("Ouais Ouais...");
+    window.alert("Ouais Ouais...");
 } 
 else if (isUpperCase(input)) {  // Si 100% en majsucule =>
     console.log("Pwa, calme-toi frére...");
+    window.alert("Pwa, calme-toi frére...");
 } 
 else if (input.includes(fortnite)) { // Si contient le mot Fortnite =>
     console.log("Ouesh bambi, on s'fait une p'tite partie ? On va voir qui fais le plus de kill.");
+    window.alert("Ouesh bambi, on s'fait une p'tite partie ? On va voir qui fais le plus de kill.");
 } 
 else if (input === '') { // Si question vide =>
     console.log("T'es en PLS ou quoi?");
+    window.alert("T'es en PLS ou quoi?");
 } 
 else if (input === `va te coucher`){
 	console.log("Mais ... Euh .... HumHum ... .");
+	window.alert("Mais ... Euh .... HumHum ... .");
     break
 }
 else {
     console.log(`M'en balek !`); // Pour tout autres phrases =>
+    window.alert(`M'en balek !`);
 }
 
 }

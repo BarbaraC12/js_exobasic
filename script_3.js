@@ -14,4 +14,5 @@ while (j<=numFloor) {
     }
     j++;
     console.log(line);
+    window.alert(line);
 }

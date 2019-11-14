@@ -32,6 +32,8 @@ function viewProteins(toDecodeArn) {
         proteinsArr.push(conversionProteins(proteins[i]));   
     }
     console.log(`L'ARN de ${toDecodeArn} est ${proteinsArr.join('-')}`);  
+    window.alert(`L'ARN de ${toDecodeArn} est ${proteinsArr.join('-')}`); //Va afficher resultat dans la fenetre
+
 }//lecture de l'Arn en proteine
 
 

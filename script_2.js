@@ -10,5 +10,6 @@ function factorielle(number) {
 }
 // Dans la console le résultat affiché sera 24
 console.log(`Le résultat est : ${factorielle(number)}`);
+window.alert(factorielle(number));
 
 
