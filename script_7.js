@@ -4,21 +4,35 @@ Si la phrase que tu prononces contient le mot "Fortnite", le bot répond "on s' 
 Si on lui envoie un message vide, le bot répond "t'es en PLS ?" ;
 Pour tout autre phrase que tu lui envoies, le bot répond "balek." ;*/
 
+n = 0
+while (n !== 10){
+    n += 1
+let input = prompt("Hein ?? Vas y j'ai pas envie. P'tain tu la pose ta question ?");
 
-let questionToAcneBot = prompt("Hein ?? Vas y j'ai pas envie. P'tain tu la pose ta question ?");
+var question = "?";
+var fortnite = `fortnite`;
+function isUpperCase(input) {
+    return input === input.toUpperCase() && input !== "";
+}
 
-if (questionToAcneBot.match(/[?]/g)) {   // Si contient un ? =>
+if (input.includes(question)) {   // Si contient un ? =>
     console.log("Ouais Ouais...");
 } 
-else if (questionToAcneBot.match(/^[^a-z]+$/)) {  // Si 100% en majsucule =>
-    console.log("Pwa, calme-toi frére...")
+else if (isUpperCase(input)) {  // Si 100% en majsucule =>
+    console.log("Pwa, calme-toi frére...");
 } 
-else if (questionToAcneBot.includes('Fornite')) { // Si contient le mot Fortnite =>
-    console.log("on s' fait une p'tite partie bambi ? On va voir qui fais le plus de kill.");
+else if (input.includes(fortnite)) { // Si contient le mot Fortnite =>
+    console.log("Ouesh bambi, on s'fait une p'tite partie ? On va voir qui fais le plus de kill.");
 } 
-else if (questionToAcneBot === '') { // Si question vide =>
-    console.log("T'es en PLS ou quoi?")
+else if (input === '') { // Si question vide =>
+    console.log("T'es en PLS ou quoi?");
 } 
+else if (input === `va te coucher`){
+	console.log("Mais ... Euh .... HumHum ... .");
+    break
+}
 else {
-    console.log("M'en balek !"); // Pour tout autres phrases =>
+    console.log(`M'en balek !`); // Pour tout autres phrases =>
+}
+
 }
