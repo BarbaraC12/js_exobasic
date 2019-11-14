@@ -10,3 +10,22 @@ function factorielle(number) {
 }
 // Dans la console le résultat affiché sera 24
 console.log(`Le résultat est : ${factorielle(number)}`);
+
+
+
+
+let numFloor = prompt ("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
+let floor = "#";
+let j = 1
+
+while (j<=numFloor) {
+    let line  = "";
+    for (let k = 0; k < (numFloor-j); k++) {
+        line += " "  
+    }
+    for (let indexe = 0; indexe < j; indexe++) {
+        line = line + floor;
+    }
+    j++;
+    console.log(line);
+}
