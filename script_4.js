@@ -33,12 +33,12 @@ for(let index in entrepreneurs) {
     console.log(identity[index]);
 }
 console.log("")
-console.log('Age des entrepreneurs today:');
+console.log('3- Age des entrepreneurs today:');
 for(let index in entrepreneurs) {
     console.log(entrepreneurs[index].first + " " + entrepreneurs[index].last + " aurait :" + (2019 - entrepreneurs[index].year) + " ans");
 }
 console.log("")
-console.log('Les entrepreneurs par ordre alphabetique de noms de famille:');
+console.log('4- Les entrepreneurs par ordre alphabetique de noms de famille:');
 let lastName = []; //mise de nom dans un array
 for(let index in entrepreneurs) {
     let tmp = entrepreneurs[index].last + " " + entrepreneurs[index].first;
