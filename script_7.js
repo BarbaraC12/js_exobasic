@@ -23,7 +23,7 @@ else if (isUpperCase(input)) {  // Si 100% en majsucule =>
     console.log("Pwa, calme-toi frére...");
     window.alert("Pwa, calme-toi frére...");
 } 
-else if (input.includes(fortnite)) { // Si contient le mot Fortnite =>
+else if (input.toLowerCase()includes(fortnite)) { // Si contient le mot Fortnite =>
     console.log("Ouesh bambi, on s'fait une p'tite partie ? On va voir qui fais le plus de kill.");
     window.alert("Ouesh bambi, on s'fait une p'tite partie ? On va voir qui fais le plus de kill.");
 } 
