@@ -10,12 +10,12 @@ while (n !== 10){
 let input = prompt("Hein ?? Vas y j'ai pas envie. P'tain tu la pose ta question ?");
 
 var question = "?";
-var fortnite = `fortnite`;
+var fortnite = `fortnite` ;
 function isUpperCase(input) {
     return input === input.toUpperCase() && input !== "";
 }
 
-if (input.includes(question)) {   // Si contient un ? =>
+if (input.substr(-1) == (question)) {   // Si contient un ? =>
     console.log("Ouais Ouais...");
     window.alert("Ouais Ouais...");
 } 
